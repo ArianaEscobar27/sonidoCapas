@@ -114,11 +114,11 @@ function setup() {
   mic.start(startPitch);
 
   userStartAudio(); // esto lo utilizo porque en algunos navigadores se cuelga el audio. Esto hace un reset del motor de audio (audio context)
-background(255);
+
 }
 
 function draw() {
-  
+  background(255);
   //imprimirData()
   amp = mic.getLevel();
   haySonido = amp > AMP_MIN;
